@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Radiobuttonactivity">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Radio Button Demo"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select City"
+        app:layout_constraintBottom_toTopOf="@+id/cityRG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/cityRG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:checkedButton="@id/blrR"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+        <RadioButton
+            android:id="@+id/blrR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="radioclicked"
+            android:text="Bangalore" />
+
+        <RadioButton
+            android:id="@+id/bomR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="radioclicked"
+            android:text="Mumbai" />
+
+        <RadioButton
+            android:id="@+id/hydR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="radioclicked"
+            android:text="Hyderabad" />
+
+        <RadioButton
+            android:id="@+id/dlhR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="radioclicked"
+            android:text="Delhi" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
